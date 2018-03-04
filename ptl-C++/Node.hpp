@@ -3,8 +3,6 @@
 
 #include <iostream>
 
-using namespace std;
-
 namespace ptl {
 
     template<class T>
@@ -24,12 +22,12 @@ namespace ptl {
         T getData() const;
         void setNext(Node<T> *newNext);
 
-        friend ostream &operator<< <> (ostream &out, const Node<T>& n);
+        friend std::ostream &operator<< <> (std::ostream &out, const Node<T>& n);
 
     };
 
     template<class T>
-    ostream &operator<<(ostream &out, const Node<T>& n);
+    std::ostream &operator<<(std::ostream &out, const Node<T>& n);
 
     template <class T>
     Node<T>::Node()
@@ -64,7 +62,7 @@ namespace ptl {
     }
 
     template<class T>
-    ostream &operator<<(ostream &out, const Node<T>& n){
+    std::ostream &operator<<(std::ostream &out, const Node<T>& n){
         out << n.data;
         return out;
     }

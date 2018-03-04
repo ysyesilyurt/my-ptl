@@ -9,7 +9,6 @@ namespace ptl {
     class LinkedList {
 
     private:
-
         Node<T>* head;
         Node<T>* tail;
         size_t  size;
@@ -243,7 +242,7 @@ namespace ptl {
             std::cout << node->getData();
             node = node->getNext();
         }
-        cout<<std::endl;
+        std::cout << std::endl;
     }
 }
 

@@ -100,7 +100,7 @@ namespace ptl {
             std::cout << node->getData();
             node = node->getNext();
         }
-        cout << std::endl;
+        std::cout << std::endl;
     }
 }
 
