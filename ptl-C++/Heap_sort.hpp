@@ -6,7 +6,7 @@
 namespace ptl {
 
     template <typename T>
-    void build_heap(T arr[], size_t length, size_t parent_index);
+    void build_heap(T[], size_t, size_t);
 
     template <typename T>
     void heap_sort(T arr[], size_t length)

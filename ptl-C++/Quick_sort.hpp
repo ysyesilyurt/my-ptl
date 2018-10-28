@@ -9,7 +9,7 @@ namespace ptl {
     void quick_sort(T[], size_t, size_t);
 
     template <typename T>
-    void partition(T[], size_t, size_t, size_t &pivot_index);
+    void partition(T[], size_t, size_t, size_t &);
 
     template <typename T>
     void quick_sort(T arr[], size_t length) { // function overloading for calling
